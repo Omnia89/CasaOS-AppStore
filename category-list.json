@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Developer",
+    "font": "code-greater-than-or-equal",
+    "description": "Developer Apps"
+  },
+  {
+    "name": "Documents",
+    "font": "file-document-outline",
+    "description": "Document editing Apps"
+  },
+  {
+    "name": "Utilities",
+    "font": "toolbox-outline",
+    "description": "Utilities Apps"
+  },
+  {
+    "name": "Home Automation",
+    "font": "home-automation",
+    "description": "Home Automation Apps"
+  },
+]
