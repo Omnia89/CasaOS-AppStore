@@ -82,7 +82,7 @@ services:
     networks:
       - omnia_tandoor_network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready", "-u", "tandoor", "-d", "tandoor"]
+      test: ["CMD-SHELL", "pg_isready", "-U", "tandoor", "-d", "tandoor"]
       interval: 10s
       timeout: 5s
       retries: 5
