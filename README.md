@@ -2,3 +2,5 @@
 
 This is my personal CasaOS store, where I add missing app from the app store, and fixes to others.
 
+## Link
+https://github.com/Omnia89/CasaOS-AppStore/archive/refs/heads/master.zip
