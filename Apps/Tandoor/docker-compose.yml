@@ -16,11 +16,12 @@ services:
       - /DATA/AppData/$AppID/mediafiles:/opt/recipes/mediafiles
     # Ports mapping between host and container
     ports:
-      # Mapping port 8085 of the host to port 8080 of the container
-      - "8085:8080"
+      # Mapping port 8085 of the host to port 8085 of the container
+      - "8085:8085
     # Environment variables to be passed to the container
     environment:
       - SECRET_KEY=6496f725-e4a4-4fa5-9f7b-db0114bc1568
+      - TANDOOR_PORT=8085
       - DB_ENGINE=django.db.backends.postgresql
       - POSTGRES_HOST=omnia-tandoor-db
       - POSTGRES_PORT=5432
@@ -65,9 +66,9 @@ services:
           description:
             en_us: 'Container Path: /opt/recipes/mediafiles'
       ports:
-        - container: "8080"
+        - container: "8085"
           description:
-            en_us: 'Container Port: 8080'
+            en_us: 'Container Port: 8085'
   omnia-tandoor-db:
     image: postgres:15-alpine
     container_name: omnia-tandoor-db
